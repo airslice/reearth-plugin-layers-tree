@@ -5,7 +5,7 @@ import JSZip from 'node-zip';
 const projectPath = path.resolve('./');
 
 // TODO: load settings
-const widgets = ['layersTree'];
+const widgets = ['layerstree'];
 const pluginId = 'reearth-plugin-layers-tree';
 const version = '0.0.1';
 
