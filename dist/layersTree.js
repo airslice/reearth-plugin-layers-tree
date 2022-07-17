@@ -636,7 +636,7 @@ const processLayer = (layer) => {
     isVisible: layer.isVisible
   }
   if(layer.children){
-    l.children = layer.children.map(cl => processLayer(cl));
+    l.children = layer.children.filter(l=> l.isVisible).map(cl => processLayer(cl));
   }
   return l;
 }
@@ -644,7 +644,7 @@ const processLayer = (layer) => {
 handles.getLayersLayers = () => {
   reearth.ui.postMessage({
     title: 'layersLayersTree',
-    value: reearth.layers.layers.map(l=>processLayer(l))
+    value: reearth.layers.layers.filter(l=> l.isVisible).map(l=>processLayer(l))
   });
 }
 
