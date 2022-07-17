@@ -1,0 +1,14 @@
+{
+  "name": "reearth-plugin-layers-tree",
+  "version": "0.0.1",
+  "description": "Layers tree component",
+  "main": "index.js",
+  "author": "lby <icesunex@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "gen": "node ./scripts/gen.mjs"
+  },
+  "devDependencies": {
+    "node-zip": "^1.1.1"
+  }
+}
