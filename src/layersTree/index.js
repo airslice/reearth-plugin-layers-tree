@@ -136,7 +136,10 @@ const processLayer = (l, tar) => {
   
   const itemType = document.createElement('a');
   itemType.className = 'layer-type';
-  const type = l.extensionId ? l.extensionId : 'folder';
+  let type = l.extensionId ? l.extensionId : 'folder';
+  if(l.children){
+    type = 'folder';
+  }
   itemType.innerHTML = icons[type] ?? '';
   itemType.setAttribute('type', type);
 
