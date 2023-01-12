@@ -1,6 +1,6 @@
 id: reearth-plugin-layers-tree
 name: Layers Tree
-version: 0.0.1
+version: 0.0.2
 extensions:
   - id: layerstree
     type: widget

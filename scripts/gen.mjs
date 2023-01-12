@@ -7,7 +7,7 @@ const projectPath = path.resolve('./');
 // TODO: load settings
 const widgets = ['layerstree'];
 const pluginId = 'reearth-plugin-layers-tree';
-const version = '0.0.1';
+const version = '0.0.2';
 
 const zip = new JSZip();
 
